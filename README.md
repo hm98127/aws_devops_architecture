@@ -4,18 +4,10 @@
 - 사전준비
 ubuntu, zsh, awscli, terrform, ansible, docker 
 
-0. 설치 및 구성 
-1. IAM, aws configue
-2. 
-
 - Network 구성 
-VPC, Subnet(Public, Private),  
+![무제 2](https://user-images.githubusercontent.com/43293666/103907144-398b7980-5144-11eb-96a3-78d8db07f49c.jpg) 
 
-0. terraform Network 환경 구성 
-VPC -> Subnet(Public, Private) -> IGW, NAT -> Route Table -> 
 
 - Web 서버 구성 (docker)
-WS, WAS, DB
+![무제](https://user-images.githubusercontent.com/43293666/103907217-5627b180-5144-11eb-9c35-57686eef532a.png)
 
-- Web 서버 검증 
-ELB(상태검사), Jmeter
