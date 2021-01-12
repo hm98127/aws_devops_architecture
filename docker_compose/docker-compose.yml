@@ -1,0 +1,40 @@
+version: '3'
+services:
+  tomcat:
+      # build:
+      #   context: ./tomcat
+      #   dockerfile: Dockerfile
+    container_name: tomcat
+    image: tomcat:8.5.58
+    volumes: 
+      - /home/ubuntu/project_H/tomcat/ROOT.war:/usr/local/tomcat/webapps/ROOT.war
+    restart: always
+    networks: 
+      spoon-project-proxy:
+        ipv4_address: 172.28.5.13
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    links:
+      - "tomcat"
+    volumes:
+      - /home/ubuntu/project_H/nginx/setting-file/:/etc/nginx
+      - /home/nginx:/usr/share/nginx
+    depends_on: 
+    - tomcat 
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    networks: 
+      spoon-project-proxy:
+        ipv4_address: 172.28.5.11
+  
+  networks: 
+    spoon-project-proxy:
+      ipam: 
+        driver: bridge
+        driver_opts: 
+          subnet: 172.28.0.0/16
+          ip_range: 172.28.5.0/24
+          gateway: 172.28.5.254 
