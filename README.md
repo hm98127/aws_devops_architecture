@@ -1,5 +1,4 @@
-## spoon_devops_pt
-# Interview PT
+## spoon_devops_Interview PT
 
 # Network 구성 
 ![vpc2](https://user-images.githubusercontent.com/43293666/104270330-9c319c00-54db-11eb-9947-a8ee309fdf8e.png)
