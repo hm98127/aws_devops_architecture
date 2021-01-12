@@ -5,7 +5,7 @@
 ubuntu, zsh, awscli, terrform, ansible, docker 
 
 - Network 구성 
-![무제 2](https://user-images.githubusercontent.com/43293666/103907144-398b7980-5144-11eb-96a3-78d8db07f49c.jpg) 
+![vpc2](https://user-images.githubusercontent.com/43293666/104270330-9c319c00-54db-11eb-9947-a8ee309fdf8e.png)
 
 
 - Web 서버 구성 (docker)
