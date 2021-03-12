@@ -10,7 +10,7 @@ services:
       - /home/ubuntu/project_H/tomcat/ROOT.war:/usr/local/tomcat/webapps/ROOT.war
     restart: always
     networks: 
-      spoon-project-proxy:
+      aws-project-proxy:
         ipv4_address: 172.28.5.13
   nginx:
     container_name: nginx
@@ -27,11 +27,11 @@ services:
       - "443:443"
     restart: always
     networks: 
-      spoon-project-proxy:
+      aws-project-proxy:
         ipv4_address: 172.28.5.11
   
   networks: 
-    spoon-project-proxy:
+    aws-project-proxy:
       ipam: 
         driver: bridge
         driver_opts: 
