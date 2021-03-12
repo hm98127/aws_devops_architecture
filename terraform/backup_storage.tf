@@ -1,6 +1,6 @@
-resource "aws_s3_bucket" "spoon_project_bucket" {
-  bucket = "spoon-project-hanibrown-bucket"
+resource "aws_s3_bucket" "hans_project_bucket" {
+  bucket = "hans-project-hanibrown-bucket"
   tags = {
-    Name  = "spoon-project-bucket"
+    Name  = "hans-project-bucket"
   }
 }
